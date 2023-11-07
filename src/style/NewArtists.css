@@ -1,0 +1,39 @@
+/* NewArtists.css */
+
+/* Card styles for NewArtists component */
+.card.new-artists-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Image styling */
+  .card.new-artists-card .card-img-top {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Card title styles */
+  .card.new-artists-card .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  /* Card text styles */
+  .card.new-artists-card .card-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Link styles */
+  .card.new-artists-card .card-text a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .card.new-artists-card .card-text a:hover {
+    text-decoration: underline;
+  }
+  

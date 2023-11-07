@@ -1,0 +1,103 @@
+/* In a separate CSS file, e.g., Chart.css */
+
+.chart-item {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chart-item.expanded {
+    background-color: #f4f4f4;
+  }
+  
+  .chart-item__left {
+    flex: 0.5;
+    text-align: center;
+  }
+  
+  .chart-item__rank {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .chart-item__right {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .chart-item__image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .chart-item__info {
+    flex: 1;
+  }
+  
+  .chart-item__title {
+    font-size: 1.2rem;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .chart-item__artist {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  .chart-item__details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .chart-item__genre,
+  .chart-item__streams,
+  .chart-item__release {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .chart-item__platforms {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .chart-item__platform {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chart-item__icon {
+    margin-right: 5px;
+  }
+  
