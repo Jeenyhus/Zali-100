@@ -36,18 +36,14 @@ const HomePage = ({ songs }) => {
       {/* This is now the chart that shows all the songs that have been ranking up the charts, in that week of the month */}
       {/* the udea is to do top 100 but we can start with top 10 and the number will increase gradually */}
       <div className="row">
-        {songs.map((song) => (
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" key={song.id}>
-            <Charts song={song} />
-          </div>
-        ))}
+            <Charts song={songs} />
       </div>
 
       {/* This is the hot news section, this will display any Entertainmment news of the week or the day */}
       {/* This will change every day possibly as Entertainment has news every sec */}
       <HotNews />
 
-          {/* This is the section for the up and coming artists to look out for, as the there is a  risiing star everyday on the music scene */}
+      {/* This is the section for the up and coming artists to look out for, as the there is a  risiing star everyday on the music scene */}
       <NewArtists />
     </div>
   );

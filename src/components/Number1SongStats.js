@@ -14,7 +14,7 @@ const Number1SongStats = () => {
             <h2>11</h2>
             <small>Weeks on number 1</small>
             {/* share the song on all social media platforms  display social links*/}
-            <a href="/social">Social</a>
+            <a href="/share">Share</a>
         </div>
     );
 };
