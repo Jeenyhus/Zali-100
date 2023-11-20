@@ -1,2 +1,77 @@
-/* insert css for the cover image of the song */
-/* this should have a wide width to suite the style of the song */
+/* Add this to your Number1Song.css file */
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px; /* Adjust the max-width as needed */
+  }
+  
+  .card-img-top {
+    width: 50px; /* Adjust the width of the circular image */
+    height: 50px; /* Adjust the height of the circular image */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Rank {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  small {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Add styles for banner effect */
+  .card.banner {
+    background-color: #007bff; /* Blue color for banner */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .card.banner h1 {
+    margin: 0;
+  }
+  
+  .card.banner img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .card.banner .Rank {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .card.banner .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .card.banner small {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

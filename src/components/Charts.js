@@ -14,8 +14,8 @@ const Charts = () => {
               <div className={`arrow-${song.movement}`}>{song.movement === 'up' ? '↑' : '↓'}</div>
               <div className="rank-container">{song.Rank}</div>
             </div>
-            <div>
-              <strong>{song.title}</strong> by {song.artist}
+            <div className="text-details">
+              <strong>{song.title}</strong> | <small>{song.artist}</small>
             </div>
             <div className="genre-container">{song.genre}</div>
           </li>

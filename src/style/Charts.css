@@ -12,16 +12,17 @@ h2 {
 ul {
   list-style: none;
   margin: 0 auto;
+  padding: 0;
+  align-items: flex-start;
 }
 
 li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
   padding: 10px;
 }
-
 img {
   margin-right: 10px;
   border-radius: 50%;
@@ -29,7 +30,7 @@ img {
 
 .arrow-container {
   display: flex;
-  align-items: right;
+  align-items: center;
 }
 
 .arrow-up {
@@ -46,11 +47,15 @@ img {
 
 strong {
   font-size: 1.2rem;
-  margin: 0 auto;
+  margin: 0; /* Remove default margin on strong */
 }
 
 .genre-container {
   margin-top: 5px;
   font-size: 0.9rem;
-  color: #806f6f;
+  color: #bcbcbc;
+}
+
+small {
+  color: #6b6b6b;
 }

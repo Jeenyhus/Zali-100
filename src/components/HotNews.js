@@ -5,7 +5,7 @@ const HotNews = () => {
   return (
     <div className="card mb-4">
       <img
-        src="https://www.nme.com/wp-content/uploads/2022/07/Sampa-The-Great.jpg"
+        src=""
         alt="Sampa the Great"
         className="card-img-top"
       />

@@ -5,7 +5,7 @@ const NewArtists = () => {
   return (
     <div className="card mb-4">
       <img
-        src="https://www.zambianmusicpromos.co/wp-content/uploads/Mordecaii-Aweh-Yo-Maps-Cover.jpg.webp"
+        src=""
         alt="Modecaii"
         className="card-img-top"
       />
