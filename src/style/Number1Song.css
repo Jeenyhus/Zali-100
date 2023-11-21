@@ -1,77 +1,34 @@
-/* Add this to your Number1Song.css file */
+.number1song-stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
 
-.card {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #f8f9fa; /* Light background color */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 300px; /* Adjust the max-width as needed */
-  }
-  
-  .card-img-top {
-    width: 50px; /* Adjust the width of the circular image */
-    height: 50px; /* Adjust the height of the circular image */
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .Rank {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-  
-  .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-  
-  small {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  /* Add styles for banner effect */
-  .card.banner {
-    background-color: #007bff; /* Blue color for banner */
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .card.banner h1 {
-    margin: 0;
-  }
-  
-  .card.banner img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-  
-  .card.banner .Rank {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-  
-  .card.banner .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-  
-  .card.banner small {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
+.number1song-stats-item {
+  text-align: center;
+}
+
+.number1song-stats-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.number1song-stats-item h2 {
+  margin: 0;
+}
+
+.number1song-stats-item small {
+  display: block;
+  color: #6c757d;
+}
+
+.number1song-stats-item span {
+  display: block;
+  color: #6c757d;
+  margin-top: 5px;
+}
