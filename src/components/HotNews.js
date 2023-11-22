@@ -1,25 +1,31 @@
-import React from 'react';
-import "../style/HotNews.css"
+import React, { useState, useEffect } from 'react';
+import "../style/HotNews.css";
 
 const HotNews = () => {
+  const headlines = [
+    'Yo Maps surpasses 3M streams in 4 DAYS!!',
+    'New Album Release: "Melodies of the Heart"',
+    'EXCLUSIVE Interview with Yo Maps: Behind the Music'
+  ];
+
+  const [currentHeadlineIndex, setCurrentHeadlineIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentHeadlineIndex((prevIndex) => (prevIndex + 1) % headlines.length);
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+
+  }, []);
+
   return (
-    <div className="number1song-stats-container">
-      <div className="number1song-stats-item">
-        <a href="/stats">Stats</a>
+    <div className="hotnews-container">
+      <div className="hotnews-stats-item">
+        <a href='/news'>{headlines[currentHeadlineIndex]}</a>
       </div>
-      <div className="number1song-stats-item">
-        <h3 className='rank'>6</h3>
-        <span>Rank</span>
-      </div>
-      <div className="number1song-stats-item">
-        <a href="/news">News</a>
-      </div>
-      <div className="number1song-stats-item">
-        <h2>11</h2>
-        <small>Weeks</small>
-      </div>
-      <div className="number1song-stats-item">
-        <a href="/share">Share</a>
+      <div className="hotnews-stats-item">
+        <a href="/share">story</a>
       </div>
     </div>
   );
