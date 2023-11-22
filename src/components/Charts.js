@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import '../style/Charts.css';
 import Music from '../data/Music';
-import { FaSpotify, FaApple } from 'react-icons/fa';
-
+import { FaSpotify, FaApple, FaYoutube } from 'react-icons/fa';
+import BoomplayIcon from './ButtonIcons/BoomplayIcon';
+import Arrows from './ButtonIcons/Arrows';
 const Charts = () => {
   const [clickedSong, setClickedSong] = useState(null);
 
@@ -22,6 +23,12 @@ const Charts = () => {
           <a href={song.platforms?.appleMusic} target="_blank" rel="noopener noreferrer">
             <FaApple style={{ color: 'black' }} />
           </a>
+          <a href={song.platforms?.boomplay} target="_blank" rel="noopener noreferrer">
+            <BoomplayIcon style={{ color: 'black' }} />
+          </a>
+          <a href={song.platforms?.boomplay} target="_blank" rel="noopener noreferrer">
+            <FaYoutube style={{ color: 'black' }} />
+          </a>
         </div>
       </div>
     );
@@ -33,13 +40,9 @@ const Charts = () => {
         key={song.id}
         onClick={() => handleSongClick(song)}
       >
-        <div className="arrow-container">
-          <img src={song.coverArt} alt={`Cover for ${song.title}`} style={{ width: '50px', height: '50px' }} />
-          <div className={`arrow-${song.movement}`}>{song.movement === 'up' ? '↑' : '↓'}</div>
-          <div className="rank-container">{song.Rank}</div>
-        </div>
+        <Arrows coverArt={song.coverArt} movement={song.movement} rank={song.Rank} />
         <div className="text-details">
-          <strong>{song.title}</strong> | <small>{song.artist}</small>
+          <strong>{song.title}</strong> | <small className='artist-name'>{song.artist}</small>
           {clickedSong === song && renderAdditionalDetails(song)}
         </div>
         <div className="streams-container">{song.streamingCount}</div>
@@ -49,7 +52,7 @@ const Charts = () => {
 
   return (
     <div className='music'>
-      <h2>Top 10 Music</h2>
+      <h3>Top 10 Music</h3>
       <ul>{Music.map((song) => renderSong(song))}</ul>
     </div>
   );
