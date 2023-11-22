@@ -4,49 +4,53 @@ import Music from '../data/Music';
 import { FaSpotify, FaApple } from 'react-icons/fa';
 
 const Charts = () => {
-  const [hoveredSong, setHoveredSong] = useState(null);
+  const [clickedSong, setClickedSong] = useState(null);
 
-  const handleHover = (song) => {
-    setHoveredSong(song);
+  const handleSongClick = (song) => {
+    setClickedSong(clickedSong === song ? null : song);
   };
 
-  const handleLeave = () => {
-    setHoveredSong(null);
+  const renderAdditionalDetails = (song) => {
+    return (
+      <div className="additional-details">
+        <small>{song.releaseDate}</small> |
+        <small> {song.genre}</small>
+        <div className='platforms-container'>
+          <a href={song.platforms?.spotify} target="_blank" rel="noopener noreferrer">
+            <FaSpotify style={{ color: 'black' }} />
+          </a>
+          <a href={song.platforms?.appleMusic} target="_blank" rel="noopener noreferrer">
+            <FaApple style={{ color: 'black' }} />
+          </a>
+        </div>
+      </div>
+    );
+  };
+
+  const renderSong = (song) => {
+    return (
+      <li
+        key={song.id}
+        onClick={() => handleSongClick(song)}
+      >
+        <div className="arrow-container">
+          <img src={song.coverArt} alt={`Cover for ${song.title}`} style={{ width: '50px', height: '50px' }} />
+          <div className={`arrow-${song.movement}`}>{song.movement === 'up' ? '↑' : '↓'}</div>
+          <div className="rank-container">{song.Rank}</div>
+        </div>
+        <div className="text-details">
+          <strong>{song.title}</strong> | <small>{song.artist}</small>
+          {clickedSong === song && renderAdditionalDetails(song)}
+        </div>
+        <div className="streams-container">{song.streamingCount}</div>
+      </li>
+    );
   };
 
   return (
     <div className='music'>
       <h2>Top 10 Music</h2>
-      <ul>
-        {Music.map((song) => (
-          <li key={song.id} onMouseEnter={() => handleHover(song)} onMouseLeave={handleLeave}>
-            <div className="arrow-container">
-              <img src={song.coverArt} alt={`Cover for ${song.title}`} style={{ width: '50px', height: '50px' }} />
-              <div className={`arrow-${song.movement}`}>{song.movement === 'up' ? '↑' : '↓'}</div>
-              <div className="rank-container">{song.Rank}</div>
-            </div>
-            <div className="text-details">
-              <strong>{song.title}</strong> | <small>{song.artist}</small>
-              {hoveredSong === song && (
-                <div className="tooltip">
-                  <p>
-                    <a href={song.platforms?.spotify} target="_blank" rel="noopener noreferrer">
-                      <FaSpotify style={{ color: 'black' }} /> Play on Spotify
-                    </a>
-                  </p>
-                  <p>
-                    <a href={song.platforms?.appleMusic} target="_blank" rel="noopener noreferrer">
-                      <FaApple style={{ color: 'black' }} /> Play on Apple Music
-                    </a>
-                  </p>
-                  <p>Streams: {song.streamingCount}</p>
-                </div>
-              )}
-            </div>
-            <div className="genre-container">{song.genre}</div>
-          </li>
-        ))}
-      </ul>
+      <ul>{Music.map((song) => renderSong(song))}</ul>
     </div>
   );
 };

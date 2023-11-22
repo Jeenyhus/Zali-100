@@ -2,7 +2,7 @@ const Music = [
   {
     id: 1,
     title: "So Mone",
-    artist: "Tay Grin & Yo Maps",
+    artist: "Yo Maps",
     coverArt: "https://zedpops.net/wp-content/uploads/2023/11/IMG-20231110-WA0091.jpg",
     movement: 'up',
     releaseDate: "2023-09-02",
@@ -21,7 +21,7 @@ const Music = [
     coverArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9f/35/78/9f35789d-cdd2-f7b5-5067-bf3500257c13/artwork.jpg/296x296bb.webp",
     movement: 'down',
     releaseDate: "2023-09-02",
-    streamingCount: '1 459 244',
+    streamingCount: '259, 244',
     genre: "R&B",
     platforms: {
       spotify: "https://ope;n.spotify.com/track/10zAF98r0XRyp618rrLU98?si=a9675f2382754415",
@@ -32,11 +32,11 @@ const Music = [
   {
     id: 3,
     title: "Try Again",
-    artist: "Yo Maps & Abel Chungu",
+    artist: "Yo Maps",
     coverArt: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8b/dc/46/8bdc4671-6ba1-65f8-68c2-316f84e12991/0757572946914.png/296x296bb.webp",
     movement: 'down',
     releaseDate: "2023-03-31",
-    streamingCount: '1 459 244',
+    streamingCount: '54, 132',
     genre: "Afro", 
     platforms: {
       spotify: "https://open.spotify.com/track/0CZCuACIMPBCqZkhF24YZw?si=85b82bedf5ff450f",
@@ -47,7 +47,7 @@ const Music = [
   {
     id: 4,
     title: "Lit Manana",
-    artist: "Towela Kaira & J Max",
+    artist: "Towela Kaira ",
     coverArt: "https://source.boomplaymusic.com/group10/M00/12/16/356faa7aa8d340bdb0b3812ab07f65cc_464_464.jpg",
     movement: 'down',
     releaseDate: "2023-04-18",
@@ -62,7 +62,7 @@ const Music = [
   {
     id: 5,
     title: "Little Me Big God",
-    artist: "Tim & Dope G",
+    artist: "Tim ",
     coverArt: "https://i0.wp.com/www.lusakatimes.com/wp-content/uploads/2023/11/sonder.png",
     movement: 'up',
     releaseDate: "2023-09-02",
@@ -77,7 +77,7 @@ const Music = [
   {
     id: 6,
     title: "Prayer",
-    artist: "Goddy Zambia & Y Celeb",
+    artist: "Goddy Zambia ",
     coverArt: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b4/ac/ca/b4acca30-7897-2f88-3519-bfd628e35c71/artwork.jpg/1200x1200bf-60.jpg",
     movement: 'down',
     releaseDate: "2023-09-02",
@@ -92,7 +92,7 @@ const Music = [
   {
     id: 7,
     title: "Sitina Kulenavo",
-    artist: "Miles Came Long & Slapdee, Daev",
+    artist: "Miles Came ALong",
     coverArt: "https://i0.wp.com/afrofire.com/wp-content/uploads/2023/11/Miles-Came-Along-No-Traffic-Lights-Full-EP.jpg?fit=960%2C960&ssl=1",
     movement: 'up',
     releaseDate: "2023-09-02",
@@ -107,7 +107,7 @@ const Music = [
   {
     id: 8,
     title: "Old Friends",
-    artist: "Miles Came Long & Slapdee, Bobby East",
+    artist: "Miles Came ALong",
     coverArt: "https://i0.wp.com/afrofire.com/wp-content/uploads/2023/11/Miles-Came-Along-No-Traffic-Lights-Full-EP.jpg?fit=960%2C960&ssl=1",
     movement: 'up',
     releaseDate: "2023-09-02",
@@ -122,7 +122,7 @@ const Music = [
   {
     id: 9,
     title: "They Know",
-    artist: "Natasha Chansa & C Jay",
+    artist: "Natasha Chansa ",
     coverArt: "https://cdns-images.dzcdn.net/images/cover/2521993fece4c55665fb9fdf87505736/500x500.jpg",
     movement: 'down',
     releaseDate: "2023-09-02",
