@@ -1,39 +1,34 @@
 /* HotNews.css */
 
-/* Card styles for HotNews component */
-.card.hot-news-card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  /* Image styling */
-  .card.hot-news-card .card-img-top {
-    border-radius: 10px 10px 0 0;
-  }
-  
-  /* Card title styles */
-  .card.hot-news-card .card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    color: #333;
-  }
-  
-  /* Card text styles */
-  .card.hot-news-card .card-text {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  /* Link styles */
-  .card.hot-news-card .card-text a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-  
-  .card.hot-news-card .card-text a:hover {
-    text-decoration: underline;
-  }
-  
+.hotnews-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e4e4e4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.hotnews-stats-item {
+  text-align: center;
+}
+
+.hotnews-stats-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.hotnews-stats-item h2,
+.hotnews-stats-item small,
+.hotnews-stats-item span {
+  margin: 0;
+  color: #babdc0;
+}
+
+.hotnews-stats-item small,
+.hotnews-stats-item span {
+  display: block;
+  margin-top: 5px;
+}

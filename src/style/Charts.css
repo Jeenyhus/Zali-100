@@ -1,61 +1,112 @@
+/* Charts.css */
+
 .music {
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border-radius: 8px;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
+  color: #626262;
 }
 
 ul {
   list-style: none;
-  margin: 0 auto;
   padding: 0;
-  align-items: flex-start;
 }
 
 li {
+  margin-bottom: 20px;
+  padding: 15px;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
-  padding: 10px;
-}
-img {
-  margin-right: 10px;
-  border-radius: 50%;
-}
-
-.arrow-container {
-  display: flex;
   align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.arrow-up {
-  color: green;
-}
-
-.arrow-down {
-  color: red;
+li:hover {
+  transform: scale(1.03);
 }
 
 .rank-container {
   margin-left: 10px;
+  font-weight: bold;
 }
 
-strong {
-  font-size: 1.2rem;
-  margin: 0; /* Remove default margin on strong */
+.text-details {
+  flex: 1;
+  margin-left: 20px;
+  text-align: left;
 }
 
-.genre-container {
-  margin-top: 5px;
-  font-size: 0.9rem;
-  color: #bcbcbc;
+.song-title {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-small {
-  color: #6b6b6b;
+.artist-name,
+.streaming-count {
+  color: rgb(182, 181, 181);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.space-between {
+  flex: 0.2;
+}
+
+.platforms-container {
+  display: none;
+}
+
+.platforms-container a {
+  color: black;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1;
+}
+
+li:hover .platforms-container {
+  display: flex;
+  gap: 5px;
+}
+
+.streams-container {
+  font-weight: bold;
+  color: rgb(214, 214, 214);
+}
+
+.additional-details {
+  color: rgb(195, 195, 195);
+  font-size: small;
+}
+@media (max-width: 600px) {
+  .music {
+    padding: 10px;
+  }
+
+  li {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-details {
+    margin: 10px 0;
+  }
 }

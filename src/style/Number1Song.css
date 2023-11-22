@@ -32,3 +32,23 @@
   color: #6c757d;
   margin-top: 5px;
 }
+
+
+/* Your existing styles for the container and other items */
+.number1song-stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Add other styles as needed */
+}
+
+.number1song-stats-item {
+  text-align: center;
+}
+
+/* Style the icons */
+.number1song-stats-item a svg {
+  color: black; /* Set the color to black */
+  font-size: 24px; /* Set the desired font size */
+}
+
